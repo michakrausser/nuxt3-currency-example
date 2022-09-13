@@ -1,20 +1,39 @@
-import { defineNuxtConfig } from "nuxt";
+import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
-  css: ["@/assets/styles/main.sass"],
-  /*vite: {
-    css: {
+  css: [
+    "@/assets/styles/main.sass",
+    "vuetify/lib/styles/main.sass"
+  ],
+  vite: {
+    /*css: {
       preprocessorOptions: {
         sass: {
-          additionalData: '@import "@/assets/styles/_variables.sass"',
-        },
-      },
-    },
-  },*/
-  modules: [ '@nuxt/content' ],
+          additionalData
+        }
+      }
+    }*/
+    define: {
+      "process.env.DEBUG": false
+    }
+  },
+  modules: [
+    '@nuxt/content'
+  ],
   content: {
     highlight: {
       theme: 'github-light'
     }
+  },
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {}
+        }
+      }
+    },
+    transpile: [ "vuetify" ]
   }
 });

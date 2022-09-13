@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const currentCount = ref(0)
 
 const incrementCount = () => {

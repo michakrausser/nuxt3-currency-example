@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
   const { data } = await useFetch( '/api/tickers?limit=10')
 
 </script>

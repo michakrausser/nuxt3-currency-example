@@ -1,5 +1,5 @@
-<script setup>
-// This will work in both `<script setup>` and `<script>`
+<script setup lang="ts">
+// This will work in both `<script setup lang="ts">` and `<script>`
 definePageMeta({
   layout: "blog",
 });

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Navbar/>
-    <Hero> A Nuxt Content v2 Blog with Bulma</Hero>
+    <Navbar :isBlog="true"/>
+    <Hero> A Nuxt Content v2 Blog with Vuetify</Hero>
     <main>
       <slot />
     </main>

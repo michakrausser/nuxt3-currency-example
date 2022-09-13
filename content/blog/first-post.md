@@ -17,10 +17,11 @@ This is some basic, sample markdown.
 ## Second Heading
 
 - Unordered lists, and:
-    1. One
-    2. Two
-    3. Three
 - More
+
+1. One
+2. Two
+3. Three
 
 > Blockquote
 
